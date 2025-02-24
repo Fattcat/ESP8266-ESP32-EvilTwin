@@ -1,5 +1,5 @@
 # ESP8266-EvilTwin
-- Custom Evil Twin (edited) attack with Fake Acess Point
+- Custom Evil Twin captive portal (edited) attack with Fake Acess Point
 - connect to : 172.0.0.1 (or it will be redirect you automatically)
 ## ! For Education Purposes ONLY !
 - ! DO NOT ! USE THIS TOOL FOR ILLEGAL ACTIVITIES !
