@@ -1,6 +1,6 @@
 # ESP8266-EvilTwin
 - Custom Evil Twin (edited) attack with Fake Acess Point
-- connect to : 172.0.0.1
+- connect to : 172.0.0.1 (or it will be redirect you automatically)
 ## ! For Education Purposes ONLY !
 - ! DO NOT ! USE THIS TOOL FOR ILLEGAL ACTIVITIES !
 - ! USING THIS TOOL YOU ARE ACCEPTED ALL RISK THAT MAY BE CREATED AT YOUR OWN RISK OR DANGER ACTIVITIES !
@@ -10,6 +10,13 @@
 - GND -> GND
 - SCL -> D1
 - SDA -> D2
+## SD Card to esp32
+- VCC -> 3.V
+- GND -> GND
+- MOSI -> D19
+- MISO -> D23
+- SCK -> D18
+- CS -> D5
 # INSTALLATION / GUIDE
 ## Using Linux
 ```
