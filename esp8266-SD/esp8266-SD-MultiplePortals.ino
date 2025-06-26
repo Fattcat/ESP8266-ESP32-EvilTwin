@@ -4,6 +4,15 @@
 #include <SPI.h>
 #include <SD.h>
 
+// CONECTION
+// SD Card Module (Connection for SD Card Module with ESP32)
+// VCC -> 3.3V
+// GND -> GND
+// MOSI -> 23
+// MISO -> 19
+// SCK -> 18
+// CS -> 15 (Pin D8 on NodeMCU)
+
 #define SD_CS_PIN 15  // Prispôsob podľa zapojenia SD
 
 const byte DNS_PORT = 53;
