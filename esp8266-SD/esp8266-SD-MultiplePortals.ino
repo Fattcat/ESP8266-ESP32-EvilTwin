@@ -17,7 +17,7 @@ const byte dnsPort = 53;
 
 // Pomocná funkcia na ukladanie údajov do SD
 void saveCredentials(const char* filename, String data) {
-  File file = SD.open(filename, FILE_APPEND);
+  File file = SD.open(filename, FILE_READ); // or FILE_APPEND if error occurs
   if (file) {
     file.println(data);
     file.close();
